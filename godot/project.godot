@@ -19,6 +19,10 @@ config/name="apex-legends-randomizer"
 run/main_scene="res://scenes/main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://scripts/global.gd"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
