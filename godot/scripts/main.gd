@@ -8,65 +8,15 @@ enum LEGEND_TYPES {
 	OFFENSIVE # Wraith, Bangalore, etc
 }
 
-var existingLegends = {
-	"bloodhound": {
-		"type": LEGEND_TYPES.RECON
-	},
-	
-	"gibraltar": {
-		"type": LEGEND_TYPES.DEFENSIVE
-	},
-	
-	"lifeline": {
-		"type": LEGEND_TYPES.SUPPORT
-	},
-	
-	"pathfinder": {
-		"type": LEGEND_TYPES.RECON
-	},
-	
-	"wraith": {
-		"type": LEGEND_TYPES.OFFENSIVE
-	},
-	
-	"bangalore": {
-		"type": LEGEND_TYPES.OFFENSIVE
-	},
-	
-	"caustic": {
-		"type": LEGEND_TYPES.DEFENSIVE
-	},
-	
-	"mirage": {
-		"type": LEGEND_TYPES.OFFENSIVE
-	},
-	
-	"octane": {
-		"type": LEGEND_TYPES.OFFENSIVE
-	},
-	
-	"wattson": {
-		"type": LEGEND_TYPES.DEFENSIVE
-	},
-	
-	"crypto": {
-		"type": LEGEND_TYPES.RECON
-	},
-	
-	"revenant": {
-		"type": LEGEND_TYPES.OFFENSIVE
-	},
-	
-	"loba": {
-		"type": LEGEND_TYPES.SUPPORT
-	},
-	
-	"rampart": {
-		"type": LEGEND_TYPES.DEFENSIVE
-	},
-	
-	"horizon": {
-		"type": LEGEND_TYPES.OFFENSIVE
-	},
-}
 var availableLegends = [];
+
+func _ready():
+	var file = File.new();
+	file.open("res://availableLegends.json", file.READ);
+	var jsonResult = file.get_as_text();
+	jsonResult = JSON.parse(jsonResult).result;
+	file.close();
+	
+	print(jsonResult);
+	
+	pass
