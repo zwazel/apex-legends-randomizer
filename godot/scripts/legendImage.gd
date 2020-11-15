@@ -7,23 +7,19 @@ onready var selectionDisplay = $selectionDisplay
 var mouseEntered = false;
 var selected = true;
 
-func _ready():
-	
-	pass
-
 func _process(delta):
 	selectionDisplay.rect_size = self.rect_size;
 	selectionDisplay.rect_position = Vector2(0,0);
 
 func _input(event):
 	if mouseEntered:
-		if (event.is_pressed() and event.button_index == BUTTON_LEFT):
-			print("Selected Legend = " + legendName.text);
-			selected = !selected;
-			selectionDisplay.visible = selected;
+		if (event.is_pressed() and event.button_index == BUTTON_LEFT): # left mouse button pressed?
+#			print("Selected Legend = " + legendName.text);
+			selected = !selected; # toggle selected
+			selectionDisplay.visible = selected; # set selectionDisplay.visible to selected
 
 func _on_Node_mouse_entered():
-	mouseEntered = true;
+	mouseEntered = true; # we can select
 
 func _on_Node_mouse_exited():
-	mouseEntered = false;
+	mouseEntered = false; # we can't select

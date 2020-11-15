@@ -2,6 +2,8 @@ extends Node
 
 var jsonResult;
 
+var availableLegends = [];
+
 enum LEGEND_TYPES {
 	# according to: https://apexlegends.gamepedia.com/Legend
 	RECON, # Bloodhound, pathfinder, etc
@@ -21,3 +23,5 @@ func _ready():
 #	print("keys = " + str(jsonResult.keys()));
 #	print("Values = " + str(jsonResult.values()));
 #	print("Size = " + str(jsonResult.size()));
+	
+	
