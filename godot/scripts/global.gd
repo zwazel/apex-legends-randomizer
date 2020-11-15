@@ -1,6 +1,81 @@
 extends Node
 
-var jsonResult;
+var jsonResult = {
+	"1": {
+		"name": "Bloodhound",
+		"type": "Recon"
+	},
+	
+	"2": {
+		"name": "Gibraltar",
+		"type": "Defensive"
+	},
+	
+	"3": {
+		"name": "Lifeline",
+		"type": "Support"
+	},
+	
+	"4": {
+		"name": "Pathfinder",
+		"type": "Recon"
+	},
+	
+	"5": {
+		"name": "Wraith",
+		"type": "Offensive"
+	},
+	
+	"6": {
+		"name": "Bangalore",
+		"type": "Offensive"
+	},
+	
+	"7": {
+		"name": "Caustic",
+		"type": "Defensive"
+	},
+	
+	"8": {
+		"name": "Mirage",
+		"type": "Offensive"
+	},
+	
+	"9": {
+		"name": "Octane",
+		"type": "Offensive"
+	},
+	
+	"10": {
+		"name": "Wattson",
+		"type": "Defensive"
+	},
+	
+	"11": {
+		"name": "Crypto",
+		"type": "Recon"
+	},
+	
+	"12": {
+		"name": "Revenant",
+		"type": "Offensive"
+	},
+	
+	"13": {
+		"name": "Loba",
+		"type": "Support"
+	},
+	
+	"14": {
+		"name": "Rampart",
+		"type": "Defensive"
+	},
+	
+	"15": {
+		"name": "Horizon",
+		"type": "Offensive"
+	}
+}
 
 var availableLegends = [];
 
@@ -14,13 +89,6 @@ enum LEGEND_TYPES {
 
 func _ready():
 	randomize();
-	
-	var file = File.new();
-	file.open("res://availableLegends.json", file.READ);
-	var jsonFile = file.get_as_text();
-	jsonFile = JSON.parse(jsonFile).result;
-	jsonResult = jsonFile;
-	file.close();
 	
 #	print("keys = " + str(jsonResult.keys()));
 #	print("Values = " + str(jsonResult.values()));
