@@ -18,6 +18,6 @@ func _ready():
 	jsonResult = jsonFile;
 	file.close();
 	
-	print("keys = " + str(jsonResult.keys()));
-	print("Values = " + str(jsonResult.values()));
-	print("Size = " + str(jsonResult.size()));
+#	print("keys = " + str(jsonResult.keys()));
+#	print("Values = " + str(jsonResult.values()));
+#	print("Size = " + str(jsonResult.size()));
