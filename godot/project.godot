@@ -25,6 +25,7 @@ Global="*res://scripts/global.gd"
 
 [display]
 
+window/size/resizable=false
 window/stretch/aspect="expand"
 
 [rendering]
