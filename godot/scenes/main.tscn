@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://scenes/legendImage.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/main.gd" type="Script" id=2]
 
 [node name="main" type="Control"]
@@ -18,64 +17,10 @@ anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -383.0
 margin_right = 383.0
-margin_bottom = 340.0
+margin_bottom = 512.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 5
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="legendImage" parent="legendContainer" instance=ExtResource( 1 )]
-margin_right = 150.0
-margin_bottom = 168.0
-legendName = "Wattson"
-
-[node name="legendImage2" parent="legendContainer" instance=ExtResource( 1 )]
-margin_left = 154.0
-margin_right = 304.0
-margin_bottom = 168.0
-
-[node name="legendImage3" parent="legendContainer" instance=ExtResource( 1 )]
-margin_left = 308.0
-margin_right = 458.0
-margin_bottom = 168.0
-
-[node name="legendImage4" parent="legendContainer" instance=ExtResource( 1 )]
-margin_left = 462.0
-margin_right = 612.0
-margin_bottom = 168.0
-
-[node name="legendImage5" parent="legendContainer" instance=ExtResource( 1 )]
-margin_left = 616.0
-margin_right = 766.0
-margin_bottom = 168.0
-
-[node name="legendImage6" parent="legendContainer" instance=ExtResource( 1 )]
-margin_top = 172.0
-margin_right = 150.0
-margin_bottom = 340.0
-
-[node name="legendImage7" parent="legendContainer" instance=ExtResource( 1 )]
-margin_left = 154.0
-margin_top = 172.0
-margin_right = 304.0
-margin_bottom = 340.0
-
-[node name="legendImage8" parent="legendContainer" instance=ExtResource( 1 )]
-margin_left = 308.0
-margin_top = 172.0
-margin_right = 458.0
-margin_bottom = 340.0
-
-[node name="legendImage9" parent="legendContainer" instance=ExtResource( 1 )]
-margin_left = 462.0
-margin_top = 172.0
-margin_right = 612.0
-margin_bottom = 340.0
-
-[node name="legendImage10" parent="legendContainer" instance=ExtResource( 1 )]
-margin_left = 616.0
-margin_top = 172.0
-margin_right = 766.0
-margin_bottom = 340.0

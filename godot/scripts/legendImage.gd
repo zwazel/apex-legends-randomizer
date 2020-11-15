@@ -1,16 +1,15 @@
 extends CenterContainer;
 
-export (String) var legendName = "placeholder";
-
+onready var legendLabel = $vBox/Label;
 var mouseEntered = false;
 
 func _ready():
-	$legendImage/Label.text = legendName;
+	pass
 
 func _input(event):
 	if mouseEntered:
 		if (event.is_pressed() and event.button_index == BUTTON_LEFT):
-			print("Selected Legend = " + legendName);
+			print("Selected Legend = " + legendLabel.text);
 
 func _on_Node_mouse_entered():
 	mouseEntered = true;
