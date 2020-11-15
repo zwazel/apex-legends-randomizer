@@ -12,8 +12,9 @@ __meta__ = {
 }
 
 [node name="vBox" type="VBoxContainer" parent="."]
+margin_top = 8.0
 margin_right = 150.0
-margin_bottom = 168.0
+margin_bottom = 194.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -31,11 +32,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="vBox"]
+[node name="name" type="Label" parent="vBox"]
 margin_top = 154.0
 margin_right = 150.0
 margin_bottom = 168.0
-text = "Placeholder"
+text = "Name: Placeholder"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="type" type="Label" parent="vBox"]
+margin_top = 172.0
+margin_right = 150.0
+margin_bottom = 186.0
+text = "Type: Placeholder"
 align = 1
 valign = 1
 __meta__ = {

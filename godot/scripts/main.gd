@@ -10,7 +10,7 @@ func _ready():
 		
 		var legend = legendImage.instance(); # Instance legendImage
 		$legendContainer.add_child(legend); # Add Child
-		legend.legendLabel.text = name;
-		
+		legend.legendName.text = name;
+		legend.legendType.text = type;
 		
 		print("\nIndex: %s, name: %s, type: %s" % [key, dict["name"], dict["type"]]);
