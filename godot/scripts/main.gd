@@ -20,4 +20,7 @@ func _ready():
 		#print("\nIndex: %s, name: %s, type: %s" % [key, dict["name"], dict["type"]]);
 
 func _on_Button_pressed():
-	Global.getRandomLegend();
+	var chosenLegend = Global.getRandomLegend();
+	print(chosenLegend);
+	
+	$VBoxContainer/Button.text = "Get Random Legend: %s" % [chosenLegend];

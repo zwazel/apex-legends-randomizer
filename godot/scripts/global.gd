@@ -13,6 +13,8 @@ enum LEGEND_TYPES {
 }
 
 func _ready():
+	randomize();
+	
 	var file = File.new();
 	file.open("res://availableLegends.json", file.READ);
 	var jsonFile = file.get_as_text();
@@ -38,7 +40,8 @@ func addLegend(legendName):
 #		print("added %s" % [legendName]);
 
 func getRandomLegend():
-	print(choose(availableLegends));
+	var chosenLegend = choose(availableLegends);
+	return chosenLegend;
 
 func choose(array):
 	array.shuffle();

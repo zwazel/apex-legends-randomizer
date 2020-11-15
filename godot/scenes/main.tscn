@@ -27,7 +27,7 @@ __meta__ = {
 }
 
 [node name="legendContainer" type="GridContainer" parent="VBoxContainer"]
-margin_right = 141.0
+margin_right = 149.0
 grow_horizontal = 2
 columns = 5
 __meta__ = {
@@ -36,7 +36,7 @@ __meta__ = {
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 margin_top = 4.0
-margin_right = 141.0
+margin_right = 149.0
 margin_bottom = 24.0
-text = "Get Random Legend"
+text = "Get Random Legend: "
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
