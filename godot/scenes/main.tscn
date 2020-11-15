@@ -5,13 +5,20 @@
 [node name="main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -1.25989
+margin_right = -1.25989
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="legendContainer" type="GridContainer" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -383.0
+margin_right = 383.0
+margin_bottom = 340.0
+grow_horizontal = 2
+grow_vertical = 2
 columns = 5
 __meta__ = {
 "_edit_use_anchors_": false
