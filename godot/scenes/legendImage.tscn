@@ -1,7 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://legend_images/Placeholder.svg" type="Texture" id=1]
 [ext_resource path="res://scripts/legendImage.gd" type="Script" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/placeholder.png-79caf8d0561fec9ef5fdf59267bf1649.stex"
 
 [node name="legendImage" type="CenterContainer"]
 margin_right = 150.0
@@ -31,7 +34,7 @@ __meta__ = {
 margin_right = 150.0
 margin_bottom = 150.0
 rect_min_size = Vector2( 150, 150 )
-texture = ExtResource( 1 )
+texture = SubResource( 1 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false
