@@ -18,3 +18,6 @@ func _ready():
 		legend.legendType.text = type;
 		
 		#print("\nIndex: %s, name: %s, type: %s" % [key, dict["name"], dict["type"]]);
+
+func _on_Button_pressed():
+	Global.getRandomLegend();

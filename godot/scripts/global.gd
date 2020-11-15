@@ -24,4 +24,23 @@ func _ready():
 #	print("Values = " + str(jsonResult.values()));
 #	print("Size = " + str(jsonResult.size()));
 	
+	for key in Global.jsonResult: # Go through the dictionary
+		availableLegends.append(jsonResult[key]["name"]); # Store all the Names of all the legends in an array
 	
+func removeLegend(legendName):
+	if availableLegends.has(legendName):
+		availableLegends.erase(legendName);
+#		print("removed %s" % [legendName]);
+
+func addLegend(legendName):
+	if !availableLegends.has(legendName):
+		availableLegends.append(legendName);
+#		print("added %s" % [legendName]);
+
+func getRandomLegend():
+	print(choose(availableLegends));
+
+func choose(array):
+	array.shuffle();
+	
+	return array.front();

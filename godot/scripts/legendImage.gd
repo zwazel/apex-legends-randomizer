@@ -17,6 +17,11 @@ func _input(event):
 #			print("Selected Legend = " + legendName.text);
 			selected = !selected; # toggle selected
 			selectionDisplay.visible = selected; # set selectionDisplay.visible to selected
+			
+			if !selected:
+				Global.removeLegend(legendName.text);
+			else:
+				Global.addLegend(legendName.text);
 
 func _on_Node_mouse_entered():
 	mouseEntered = true; # we can select

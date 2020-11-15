@@ -16,14 +16,27 @@ legendContainer = NodePath("VBoxContainer/legendContainer")
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
+margin_left = -6.0
+margin_right = 6.0
+margin_bottom = 24.0
 grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="legendContainer" type="GridContainer" parent="VBoxContainer"]
+margin_right = 141.0
 grow_horizontal = 2
 columns = 5
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_top = 4.0
+margin_right = 141.0
+margin_bottom = 24.0
+text = "Get Random Legend"
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
