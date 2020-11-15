@@ -27,6 +27,7 @@ __meta__ = {
 [node name="legendImage" parent="legendContainer" instance=ExtResource( 1 )]
 margin_right = 150.0
 margin_bottom = 168.0
+legendName = "Wattson"
 
 [node name="legendImage2" parent="legendContainer" instance=ExtResource( 1 )]
 margin_left = 154.0
