@@ -6,7 +6,12 @@
 flags = 4
 load_path = "res://.import/placeholder.png-79caf8d0561fec9ef5fdf59267bf1649.stex"
 
-[node name="legendImage" type="CenterContainer"]
+[node name="Control" type="Control"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="legendImage" type="CenterContainer" parent="."]
 margin_right = 150.0
 margin_bottom = 186.0
 size_flags_horizontal = 2
@@ -16,21 +21,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="selectionDisplay" type="ColorRect" parent="."]
+[node name="selectionDisplay" type="ColorRect" parent="legendImage"]
 margin_left = 75.0
 margin_top = 93.0
 margin_right = 75.0
 margin_bottom = 93.0
 color = Color( 1, 0.890196, 0.509804, 0.196078 )
 
-[node name="vBox" type="VBoxContainer" parent="."]
+[node name="vBox" type="VBoxContainer" parent="legendImage"]
 margin_right = 150.0
 margin_bottom = 186.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="image" type="TextureRect" parent="vBox"]
+[node name="image" type="TextureRect" parent="legendImage/vBox"]
 margin_right = 150.0
 margin_bottom = 150.0
 rect_min_size = Vector2( 150, 150 )
@@ -40,7 +45,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="name" type="Label" parent="vBox"]
+[node name="name" type="Label" parent="legendImage/vBox"]
 margin_top = 154.0
 margin_right = 150.0
 margin_bottom = 168.0
@@ -51,7 +56,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="type" type="Label" parent="vBox"]
+[node name="type" type="Label" parent="legendImage/vBox"]
 margin_top = 172.0
 margin_right = 150.0
 margin_bottom = 186.0
@@ -61,5 +66,5 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="mouse_entered" from="." to="." method="_on_Node_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_Node_mouse_exited"]
+[connection signal="mouse_entered" from="legendImage" to="legendImage" method="_on_Node_mouse_entered"]
+[connection signal="mouse_exited" from="legendImage" to="legendImage" method="_on_Node_mouse_exited"]
